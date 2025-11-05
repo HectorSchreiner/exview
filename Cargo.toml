@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-iced = { version = "0.12", features = ["tokio"] }
+iced = { version = "0.13.1", features = ["highlighter", "tokio", "debug"] }
 serde_json = "1.0.145"
 uuid = "1.18.1"
+
+rfd = "0.13"
