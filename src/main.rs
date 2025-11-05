@@ -1,5 +1,3 @@
-pub mod backend;
-
-fn main() {
-    println!("Hello, world!");
+pub fn main() {
+    println!("hello, world")
 }
