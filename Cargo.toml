@@ -1,0 +1,9 @@
+[package]
+name = "exview"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iced = "0.13.1"
+serde_json = "1.0.145"
+uuid = "1.18.1"
