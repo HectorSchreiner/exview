@@ -1,10 +1,11 @@
-use crate::backend::logrythm::alert::{AlarmID, Alarm};
+use crate::backend::domains::alarm::*;
 
-pub struct LogrythmApiHandler {
+
+pub struct Logrythm {
     api_key: String,
 }
 
-impl LogrythmApiHandler {
+impl Logrythm {
     pub fn new(api_key: &str) -> Self {
         Self { api_key: api_key.to_string() }
     }

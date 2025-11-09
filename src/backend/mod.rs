@@ -1,2 +1,3 @@
-pub mod user;
-pub mod logrythm;
+pub mod domains;
+pub mod repos;
+pub mod routes;

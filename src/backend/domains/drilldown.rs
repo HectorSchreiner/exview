@@ -1,17 +1,24 @@
 use std::{net::Ipv4Addr, str::FromStr};
 
 pub struct DrillDown {
-
+    options: DrillDownSearchOptions,
 }
 
+impl DrillDown {
+    pub fn new(builder: DrillDownSearchOptions) -> Self {
+        todo!()
+    }
+}
+
+/// Drilldownsearchbuilder is used to create a drilldown.
 pub struct DrillDownSearchOptions {
     user: Option<String>,
     ip_origin: Option<std::net::Ipv4Addr>,
     ip_impacted: Option<std::net::Ipv4Addr>,
-    port_origin: i32,
-    port_impacted: i32,
-    log_source_entity: String,
-    session: i32
+    port_origin: Option<i32>,
+    port_impacted: Option<i32>,
+    log_source_entity: Option<String>,
+    session: Option<i32>
 }
 
 impl DrillDownSearchOptions {

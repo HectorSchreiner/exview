@@ -4,8 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-iced = { version = "0.13.1", features = ["highlighter", "tokio", "debug"] }
+anyhow = "1.0.100"
+axum = "0.8.6"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0.145"
+thiserror = "2.0.17"
+tokio = { version = "1", features = ["full"] }
 uuid = "1.18.1"
-
-rfd = "0.13"
